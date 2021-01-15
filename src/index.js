@@ -1,13 +1,20 @@
+// Dependency Imports
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter, Route } from 'react-router-dom';
+// Component Imports
 import App from './App';
+// CSS Imports
+import './index.css';
+// Misc Imports
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <Route path='/' component={App} />
+    </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

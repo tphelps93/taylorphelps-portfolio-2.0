@@ -1,0 +1,31 @@
+.projects {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #0088a9;
+  font-size: 30px;
+}
+
+.projects button {
+  font-family: 'Montserrat', sans-serif;
+  color: goldenrod;
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom: 20px;
+  width: 85px;
+  border: none;
+  font-size: 20px;
+}
+
+
+
+@media all and (min-width: 768px) {
+    .projects button:hover {
+        color: #0088a9;
+        cursor: pointer;
+    }
+}
