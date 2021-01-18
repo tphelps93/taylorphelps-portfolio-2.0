@@ -1,17 +1,16 @@
-.projects {
+.projects-page {
   height: 100%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-.projects h1 {
+.projects-page h1 {
   font-family: 'Orbitron', sans-serif;
   color: #0088a9;
   font-size: 30px;
 }
 
-.projects button {
+.projects-page button {
   font-family: 'Montserrat', sans-serif;
   color: goldenrod;
   background-color: rgba(255, 255, 255, 0);
@@ -21,11 +20,116 @@
   font-size: 20px;
 }
 
+.projects {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
 
+.proj-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #0088a9;
+}
+
+.proj-desc {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.proj {
+  position: relative;
+  width: 350px;
+  margin: 5px;
+  box-shadow: 5px 0 25px 10px rgba(0, 0, 0, 0.25);
+}
+
+.proj-img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.proj-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.projects {
+  padding: 10px;
+  flex-direction: row;
+}
+
+.proj-links {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #24252a;
+  padding: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: white;
+  height: 300px;
+}
+
+.proj-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.proj-links a:hover {
+  color: #0088a9;
+}
+
+.row h4 {
+  color: #0088a9;
+}
+
+.row p {
+  color: white;
+}
+
+.proj-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.proj-links h2 {
+  color: goldenrod;
+}
 
 @media all and (min-width: 768px) {
-    .projects button:hover {
-        color: #0088a9;
-        cursor: pointer;
-    }
+  .projects-page button:hover {
+    color: #0088a9;
+    cursor: pointer;
+  }
+
+  .proj-overlay:hover > * {
+    transform: translateY(0);
+  }
+
+  .proj-overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
 }

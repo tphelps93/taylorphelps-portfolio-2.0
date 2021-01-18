@@ -1,8 +1,33 @@
 .about {
   height: 100%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.about button {
+  margin: 10px;
+  margin-left: 40px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #fefefe;
+  padding: 20px;
+  padding-bottom: 15rem;
+  width: 100%;
+}
+
+.about-content img {
+  width: 350px;
+  margin-right: 70px;
+}
+
+.about-content div {
+  align-self: center;
+  margin-right: 400px;
 }
 
 .about h1 {
@@ -15,8 +40,11 @@
   padding: 10px;
   margin: 5px;
   font-family: 'Montserrat', sans-serif;
-  color: #fefefe;
-  font-size: 15px;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 18px;
 }
 
 .about button {
@@ -28,10 +56,69 @@
   font-size: 20px;
 }
 
+.tech {
+  display: flex;
+  flex-direction: column;
+  background-color: #24252a;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 5px;
+  width: 95vw;
+  border-radius: 10px;
+  margin-left: 20px;
+  box-shadow: 5px 0 25px 10px rgba(0, 0, 0, 0.25);
+}
+
+.tech h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: goldenrod;
+}
+
+.tech h4 {
+  color: #0088a9;
+}
+
+.tech p {
+  color: white;
+}
+
+.tech h4,
+.tech p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tech div {
+  border-bottom: 2px solid goldenrod;
+  padding: 10px;
+  color: white;
+  margin-top: 50px;
+  flex: 1;
+}
+
+.tech h2 {
+  margin-top: -40px;
+}
 
 @media all and (min-width: 768px) {
-    .about button:hover {
-        color: #0088a9;
-        cursor: pointer;
-    }
+  .about button:hover {
+    color: #0088a9;
+    cursor: pointer;
+  }
+  .about-content div {
+    width: 45%;
+  }
+
+  .tech {
+    flex-direction: row;
+    align-self: center;
+    margin-top: -13rem;
+  }
+
+  .design {
+    border-right: 2px solid goldenrod;
+  }
+
+  .about button {
+    margin-right: 20px;
+  }
 }
