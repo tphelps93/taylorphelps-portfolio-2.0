@@ -997,7 +997,7 @@
   height: 200px;
   background: url('../../Images/earth.png');
   background-size: cover;
-  animation: animateEarth 30s linear infinite;
+  animation: animateEarth 25s linear infinite;
   border-radius: 50%;
   box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.5);
 }
@@ -1007,7 +1007,7 @@
     background-position: 0 0;
   }
   100% {
-    background-position: 719px 0;
+    background-position: 900.0979px 0;
   }
 }
 

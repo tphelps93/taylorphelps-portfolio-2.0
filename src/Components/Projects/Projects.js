@@ -27,7 +27,7 @@ export default class Projects extends Component {
         <div className='projects'>
           <div className='proj'>
             <div className='proj-content'>
-              <a target='_blank' href='https://hollywoof.xyz/'>
+              <a target='_blank' rel='noreferrer' href='https://hollywoof.xyz/'>
                 <img className='proj-img' src={dog} alt='hollywoof'></img>{' '}
                 <div className='proj-overlay'>
                   <h2 className='proj-title'> HollyWoof </h2>
@@ -39,8 +39,22 @@ export default class Projects extends Component {
                 </div>
               </a>
               <div className='proj-links'>
-                <a target='_blank' href='https://github.com/tphelps93/hollywoof-client'> Client Repo </a>
-                <a target='_blank' href='https://github.com/tphelps93/hollywoof-server'> Server Repo </a>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://github.com/tphelps93/hollywoof-client'
+                >
+                  {' '}
+                  Client Repo{' '}
+                </a>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://github.com/tphelps93/hollywoof-server'
+                >
+                  {' '}
+                  Server Repo{' '}
+                </a>
                 <h2> Technologies </h2>
                 <div className='technologies'>
                   <div className='row front'>
@@ -50,7 +64,7 @@ export default class Projects extends Component {
                   <div className='row back'>
                     <h4> Backend </h4>
                     <p> NodeJS </p>
-                    <p> Express.js </p>
+                    <p> Express </p>
                   </div>
                   <div className='row server'>
                     <h4> Server </h4>
@@ -73,6 +87,7 @@ export default class Projects extends Component {
             <div className='proj-content'>
               <a
                 target='_blank'
+                rel='noreferrer'
                 href='https://strong-at-every-size-frontend.tphelps93.vercel.app/'
               >
                 <img className='proj-img' src={gym} alt='saes'></img>{' '}
@@ -87,8 +102,22 @@ export default class Projects extends Component {
                 </div>
               </a>
               <div className='proj-links'>
-                <a target='_blank' href='https://github.com/tphelps93/strong-at-every-size'> Client Repo </a>
-                <a target='_blank' href='https://github.com/tphelps93/strong-at-every-size-api'> Server Repo </a>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://github.com/tphelps93/strong-at-every-size'
+                >
+                  {' '}
+                  Client Repo{' '}
+                </a>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://github.com/tphelps93/strong-at-every-size-api'
+                >
+                  {' '}
+                  Server Repo{' '}
+                </a>
                 <h2> Technologies </h2>
                 <div className='technologies'>
                   <div className='row front'>
@@ -98,7 +127,7 @@ export default class Projects extends Component {
                   <div className='row back'>
                     <h4> Backend </h4>
                     <p> NodeJS </p>
-                    <p> Express.js </p>
+                    <p> Express </p>
                   </div>
                   <div className='row server'>
                     <h4> Server </h4>
@@ -121,6 +150,7 @@ export default class Projects extends Component {
             <div className='proj-content'>
               <a
                 target='_blank'
+                rel='noreferrer'
                 href='https://tphelps93.github.io/simpleCalculator/'
               >
                 <img className='proj-img' src={calc} alt='calculator'></img>{' '}
@@ -134,7 +164,14 @@ export default class Projects extends Component {
                 </div>
               </a>
               <div className='proj-links'>
-                <a target='_blank' href='https://github.com/tphelps93/simpleCalculator'> Client Repo </a>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://github.com/tphelps93/simpleCalculator'
+                >
+                  {' '}
+                  Client Repo{' '}
+                </a>
                 <h2> Technologies </h2>
                 <div className='technologies'>
                   <div className='row front'>
@@ -161,8 +198,8 @@ export default class Projects extends Component {
           </div>
         </div>
         <Link to='/contact'>
-          <button>
-            <span>Contact</span>
+          <button className='next-btn'>
+            <span className='next'>Contact</span>
             <FontAwesomeIcon
               style={{ fontSize: '35px' }}
               icon='angle-double-down'
