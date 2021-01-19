@@ -1015,6 +1015,7 @@
   .intro button:hover {
     color: #0088a9;
     cursor: pointer;
+    transition: 200ms;
   }
 
   .heading {
