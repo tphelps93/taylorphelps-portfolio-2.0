@@ -11,7 +11,7 @@
 }
 
 .about-content img {
-  width: 20%;
+  max-width: 20%;
   margin: 10px;
 }
 
@@ -101,6 +101,7 @@
     cursor: pointer;
     transition: 200ms;
   }
+  
   .about-content {
     display: flex;
     flex-direction: row;
@@ -115,7 +116,8 @@
   }
 
   .about-content img {
-    width: 20%;    
+    align-self: center;
+    max-width: 20%;    
     margin-right: 70px;
   }
 
