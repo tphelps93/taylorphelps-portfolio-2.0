@@ -14,52 +14,24 @@ import './App.css';
 import './pageTransitions/slideTransition.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      prevDepth: this.getPathDepth(this.props.location),
-    };
-  }
-
-  componentWillReceiveProps() {
-    this.setState({ prevDepth: this.getPathDepth(this.props.location) });
-  }
-
-  getPathDepth(location) {
-    let pathArr = location.pathname.split('/');
-    pathArr = pathArr.filter(n => n !== '');
-    return pathArr.length;
-  }
-
   render() {
-    const { location } = this.props;
-    const currentKey = location.pathname.split('/')[1] || '/';
-    const timeout = { enter: 800, exit: 400 };
     return (
-      <TransitionGroup component='div' className='App'>
-        <CSSTransition
-          key={currentKey}
-          timeout={timeout}
-          classNames='pageSlider'
-          mountOnEnter={false}
-          unmountOnExit={true}
-        >
-          <div
-            className={
-              this.getPathDepth(location) - this.state.prevDepth >= 0
-                ? 'up'
-                : 'down'
-            }
-          >
-            <Switch location={location}>
-              <Route exact path='/' component={Intro} />
-              <Route path='/about' component={About} />
-              <Route path='/projects' component={Projects} />
-              <Route path='/contact' component={Contact} />
-            </Switch>
+      <Route
+        render={({ location }) => (
+          <div className='App'>
+            <TransitionGroup>
+              <CSSTransition key={location.key} timeout={300} classNames='fade'>
+                <Switch location={location}>
+                  <Route exact path='/' component={Intro} />
+                  <Route path='/about' component={About} />
+                  <Route path='/projects' component={Projects} />
+                  <Route path='/contact' component={Contact} />
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
           </div>
-        </CSSTransition>
-      </TransitionGroup>
+        )}
+      ></Route>
     );
   }
 }

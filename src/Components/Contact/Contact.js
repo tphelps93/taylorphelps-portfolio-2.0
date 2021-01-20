@@ -90,17 +90,14 @@ export default class Contact extends Component {
     const { status } = this.state;
     return (
       <div className='contact page'>
-        <div className='prev-btn'>
-          <Link to='/projects'>
+          <Link className='prev-proj' to='/projects'>
             <button>
-              <span className='prev'>Projects</span>
               <FontAwesomeIcon
                 style={{ fontSize: '35px' }}
-                icon='angle-double-up'
+                icon='project-diagram'
               />{' '}
             </button>
           </Link>
-        </div>
 
         <form
           onSubmit={this.submitForm}

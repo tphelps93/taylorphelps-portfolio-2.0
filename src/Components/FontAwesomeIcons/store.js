@@ -1,7 +1,9 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-    faAngleDoubleDown,
-    faAngleDoubleUp
+    faUserTie,
+    faHome,
+    faProjectDiagram,
+    faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faAngleDoubleDown, faAngleDoubleUp);
+library.add(faHome, faUserTie, faProjectDiagram, faEnvelope);

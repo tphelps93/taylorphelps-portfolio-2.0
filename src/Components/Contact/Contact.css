@@ -1,8 +1,9 @@
 .contact {
    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+   overflow: hidden;
 }
 
-.prev-btn button {
+.prev-proj button {
   font-family: 'Montserrat', sans-serif;
   color: goldenrod;
   background-color: rgba(255, 255, 255, 0);
@@ -117,6 +118,16 @@
   .contact-form button:hover {
     cursor: pointer;
     background-color: #0088a9;
+    transition: 200ms;
+  }
+
+  .prev-proj button {
+    margin: 10px;
+  }
+
+  .prev-proj button:hover {
+    color: #0088a9;
+    cursor: pointer;
     transition: 200ms;
   }
 }

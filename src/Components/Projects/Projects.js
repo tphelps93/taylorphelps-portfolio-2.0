@@ -13,12 +13,11 @@ export default class Projects extends Component {
   render() {
     return (
       <div className='projects-page page'>
-        <Link to='/about'>
+        <Link className='prev-about' to='/about'>
           <button>
-            <span className='prev'>About</span>
             <FontAwesomeIcon
               style={{ fontSize: '35px' }}
-              icon='angle-double-up'
+              icon='user-tie'
             />{' '}
           </button>
         </Link>
@@ -197,12 +196,11 @@ export default class Projects extends Component {
             </div>
           </div>
         </div>
-        <Link to='/contact'>
+        <Link className='next-contact' to='/contact'>
           <button className='next-btn'>
-            <span className='next'>Contact</span>
             <FontAwesomeIcon
               style={{ fontSize: '35px' }}
-              icon='angle-double-down'
+              icon='envelope'
             />{' '}
           </button>
         </Link>
