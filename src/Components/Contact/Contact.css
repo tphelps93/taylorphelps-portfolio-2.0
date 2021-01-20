@@ -112,10 +112,24 @@
   visibility: visible;
 }
 
+.social-links h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #0088a9;
+}
+
+.social-links a {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
 @media all and (min-width: 768px) {
   .contact {
     overflow: hidden;
   }
+
   .prev-btn button:hover {
     color: #0088a9;
     cursor: pointer;
@@ -135,6 +149,11 @@
   .prev-proj button:hover {
     color: #0088a9;
     cursor: pointer;
+    transition: 200ms;
+  }
+
+  .social-links a:hover {
+    color: goldenrod;
     transition: 200ms;
   }
 }

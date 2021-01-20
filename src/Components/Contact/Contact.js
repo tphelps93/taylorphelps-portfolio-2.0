@@ -90,14 +90,14 @@ export default class Contact extends Component {
     const { status } = this.state;
     return (
       <div className='contact page'>
-          <Link className='prev-proj' to='/projects'>
-            <button>
-              <FontAwesomeIcon
-                style={{ fontSize: '35px' }}
-                icon='project-diagram'
-              />{' '}
-            </button>
-          </Link>
+        <Link className='prev-proj' to='/projects'>
+          <button>
+            <FontAwesomeIcon
+              style={{ fontSize: '35px' }}
+              icon='project-diagram'
+            />{' '}
+          </button>
+        </Link>
 
         <form
           onSubmit={this.submitForm}
@@ -192,6 +192,12 @@ export default class Contact extends Component {
             </p>
           )}
         </form>
+        <div className='social-links'>
+          <h2> Want to know more? </h2>
+          <a href='mailto:tphelps1993@gmail.com'> Email </a>
+          <a href='https://github.com/tphelps93'> GitHub </a>
+          <a href='https://www.linkedin.com/in/taylordev/'> LinkedIn </a>
+        </div>
       </div>
     );
   }

@@ -74,7 +74,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.25s;
   box-shadow: 5px 0 25px 10px rgba(0, 0, 0, 0.25);
 }
@@ -82,7 +82,7 @@
 .projects {
   padding: 10px;
   flex-direction: row;
-  height: 100%;
+  height: 100vh;
 }
 
 .proj-links {
@@ -97,12 +97,12 @@
 }
 
 .proj-links a {
-  text-decoration: none;
-  color: white;
+  font-weight: bold;
 }
 
-.proj-links a:hover {
-  color: #0088a9;
+.proj-links a {
+  text-decoration: none;
+  color: white;
 }
 
 .row h4 {
@@ -136,6 +136,15 @@
     color: #0088a9;
     cursor: pointer;
     transition: 200ms;
+  }
+
+  .proj-links a:hover {
+    color: goldenrod;
+    transition: 200ms;
+  }
+
+  .proj-overlay {
+    /* opacity: 0; */
   }
 
   .proj-overlay:hover > * {

@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import gym from '../../Images/gym.jpg';
 import dog from '../../Images/dog.jpg';
 import calc from '../../Images/calc.jpg';
+import book from '../../Images/books.jpg';
 import './Projects.css';
 
 export default class Projects extends Component {
@@ -15,10 +16,7 @@ export default class Projects extends Component {
       <div className='projects-page page'>
         <Link className='prev-about' to='/about'>
           <button>
-            <FontAwesomeIcon
-              style={{ fontSize: '35px' }}
-              icon='user-tie'
-            />{' '}
+            <FontAwesomeIcon style={{ fontSize: '35px' }} icon='user-tie' />{' '}
           </button>
         </Link>
         <h1> Projects </h1>
@@ -31,9 +29,9 @@ export default class Projects extends Component {
                 <div className='proj-overlay'>
                   <h2 className='proj-title'> HollyWoof </h2>
                   <p className='proj-desc'>
-                    {' '}
                     HollyWoof is an application that aims to prepare dog owners
-                    in the event of a dog barking on screen.
+                    in the event of a dog barking on screen. I built this
+                    because my dogs bark whenever a dog barks on screen.
                   </p>
                 </div>
               </a>
@@ -93,10 +91,11 @@ export default class Projects extends Component {
                 <div className='proj-overlay'>
                   <h2 className='proj-title'> Strong At Every Size </h2>
                   <p className='proj-desc'>
-                    {' '}
                     A personal training website that allows users to create an
                     account, login, purchase items from the store, and keep up
-                    to date with news and promotions.
+                    to date with news and promotions. I built this to help my
+                    wife build up her client base for her personal training
+                    business.
                   </p>
                 </div>
               </a>
@@ -150,15 +149,16 @@ export default class Projects extends Component {
               <a
                 target='_blank'
                 rel='noreferrer'
-                href='https://tphelps93.github.io/simpleCalculator/'
+                href='https://bookmarks-client-ioreslwa1.vercel.app/'
               >
-                <img className='proj-img' src={calc} alt='calculator'></img>{' '}
+                <img className='proj-img' src={book} alt='bookmark'></img>{' '}
                 <div className='proj-overlay'>
-                  <h2 className='proj-title'> JavaScript Calculator </h2>
+                  <h2 className='proj-title'> Bookmark </h2>
                   <p className='proj-desc'>
                     {' '}
-                    A simple, yet functional calculator web-application made
-                    with JavaScript. Complete with all the basic operations.
+                    A simple bookmark application that allows users to keep
+                    track of favorited websites. I built this for a more
+                    customized way to keep track of favorited websites.
                   </p>
                 </div>
               </a>
@@ -166,30 +166,41 @@ export default class Projects extends Component {
                 <a
                   target='_blank'
                   rel='noreferrer'
-                  href='https://github.com/tphelps93/simpleCalculator'
+                  href='https://github.com/thinkful-ei-shark/react-bookmarks-app-Taylor'
                 >
                   {' '}
                   Client Repo{' '}
+                </a>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://github.com/tphelps93/bookmarks-api'
+                >
+                  {' '}
+                  Server Repo{' '}
                 </a>
                 <h2> Technologies </h2>
                 <div className='technologies'>
                   <div className='row front'>
                     <h4> FrontEnd </h4>
-                    <p> HTML </p>
-                    <p> CSS </p>
-                    <p> JavaScript </p>
+                    <p> React </p>
                   </div>
                   <div className='row back'>
                     <h4> Backend </h4>
-                    <p> None </p>
+                    <p> NodeJS </p>
+                    <p> Express </p>
                   </div>
                   <div className='row server'>
                     <h4> Server </h4>
-                    <p> None </p>
+                    <p> PostgreSQL </p>
+                    <p> Knex </p>
                   </div>
                   <div className='row test'>
                     <h4> Testing </h4>
-                    <p> None </p>
+                    <p> Jest </p>
+                    <p> Chai </p>
+                    <p> Mocha </p>
+                    <p> Postman </p>
                   </div>
                 </div>
               </div>
@@ -198,10 +209,7 @@ export default class Projects extends Component {
         </div>
         <Link className='next-contact' to='/contact'>
           <button className='next-btn'>
-            <FontAwesomeIcon
-              style={{ fontSize: '35px' }}
-              icon='envelope'
-            />{' '}
+            <FontAwesomeIcon style={{ fontSize: '35px' }} icon='envelope' />{' '}
           </button>
         </Link>
       </div>
