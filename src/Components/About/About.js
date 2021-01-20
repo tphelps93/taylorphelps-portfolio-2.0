@@ -12,10 +12,7 @@ export default class About extends Component {
       <div className='about page'>
         <Link className='prev-home' to='/'>
           <button>
-            <FontAwesomeIcon
-              style={{ fontSize: '35px' }}
-              icon='home'
-            />{' '}
+            <FontAwesomeIcon style={{ fontSize: '35px' }} icon='home' />{' '}
           </button>
         </Link>
         <div className='about-content'>
@@ -37,8 +34,9 @@ export default class About extends Component {
               I still remember the moment that I completed my first application.
               It felt so good to finally complete something on my own! It has
               been a tough journey, but it has been very fun and rewarding. I
-              intend to develop for the rest of my life and cannot wait to get
-              working with a team of people to make amazing things.{' '}
+              intend to develop for the rest of my life. I am looking forward to
+              collaborating with a team of amazing programmers to build awesome
+              things.
             </p>{' '}
             <p>
               {' '}
@@ -55,7 +53,9 @@ export default class About extends Component {
         </div>
         <div className='tech'>
           <div className='design'>
-            <span><FontAwesomeIcon className='tech-icons' icon='pencil-alt'/> </span>
+            <span>
+              <FontAwesomeIcon className='tech-icons' icon='pencil-alt' />{' '}
+            </span>
             <h2> Designer</h2>
             <h4> Design Tools </h4>
             <p> Balsamiq Wireframes </p>
@@ -64,7 +64,9 @@ export default class About extends Component {
             <p> Pen and Paper </p>
           </div>
           <div className='fullstack'>
-          <span><FontAwesomeIcon className='tech-icons' icon='code'/> </span>
+            <span>
+              <FontAwesomeIcon className='tech-icons' icon='code' />{' '}
+            </span>
             <h2> Full Stack Development </h2>
             <h4> Languages </h4>
             <p> HTML, CSS, JavaScript, C# </p>
@@ -75,7 +77,7 @@ export default class About extends Component {
           </div>
         </div>
         <Link className='next-proj' to='/projects'>
-          <button> 
+          <button>
             <FontAwesomeIcon
               style={{ fontSize: '35px' }}
               icon='project-diagram'
