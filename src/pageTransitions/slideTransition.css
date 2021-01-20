@@ -6,25 +6,25 @@
     z-index: 10;
 }
 
-.pageSlider-enter.left > .page {
+.pageSlider-enter.up > .page {
     transform: translate3d(0, 100%, 0);
 }
 
-.pageSlider-enter.right > .page {
+.pageSlider-enter.down > .page {
     transform: translate3d(0, -100%, 0);
 }
 
-.pageSlider-exit.left > .page {
+.pageSlider-exit.up > .page {
     transform: translate3d(0, -100%, 0);
 }
 
-.pageSlider-exit.right > .page {
+.pageSlider-exit.down > .page {
     transform: translate3d(0, 100%, 0);
 }
 
 .pageSlider-enter.pageSlider-enter-active > .page {
     transform: translate3d(0, 0, 0);
-    transition: all 1000ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 

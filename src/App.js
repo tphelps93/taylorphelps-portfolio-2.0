@@ -47,8 +47,8 @@ class App extends Component {
           <div
             className={
               this.getPathDepth(location) - this.state.prevDepth >= 0
-                ? 'left'
-                : 'right'
+                ? 'up'
+                : 'down'
             }
           >
             <Switch location={location}>
