@@ -1,29 +1,18 @@
 .about {
-  height: 100%;
+  overflow-x: hidden;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
 }
 
 .about-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   background-color: #fefefe;
-  padding: 20px;
-  padding-bottom: 15rem;
-  width: 100%;
 }
 
 .about-content img {
-  width: 350px;
-  margin-right: 70px;
-}
-
-.about-content div {
-  align-self: center;
-  margin-right: 400px;
+  width: 20%;
+  margin: 10px;
 }
 
 .about h1 {
@@ -37,7 +26,7 @@
   margin: 5px;
   font-family: 'Montserrat', sans-serif;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   line-height: 35px;
   font-size: 18px;
@@ -50,19 +39,19 @@
   width: 90px;
   border: none;
   font-size: 20px;
+  padding: 10px;
 }
 
 .tech {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-self: center;
   background-color: #24252a;
-  text-align: center;
   margin-top: 2rem;
-  padding: 5px;
-  width: 95vw;
+  width: 90vw;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin-left: 20px;
   box-shadow: 5px 0 25px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -96,14 +85,38 @@
   margin-top: -40px;
 }
 
+.next-proj {
+  padding: 10px;
+}
+
+.tech-icons {
+  color: #0088a9;
+  margin-bottom: 70px;
+  font-size: 30px;
+}
+
 @media all and (min-width: 768px) {
   .about button:hover {
     color: #0088a9;
     cursor: pointer;
     transition: 200ms;
   }
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 15rem;
+    width: 100%;
+  }
+
   .about-content div {
     width: 45%;
+  }
+
+  .about-content img {
+    width: 20%;    
+    margin-right: 70px;
   }
 
   .tech {
@@ -113,17 +126,17 @@
   }
 
   .design {
+    display: flex;
+    flex-direction: column;
     border-right: 2px solid goldenrod;
+  }
+
+  .fullstack {
+    display: flex;
+    flex-direction: column;
   }
 
   .about button {
     margin: 5px;
-  }
-
-  .prev-home {
-  }
-
-  .next-proj {
-    margin-top: 60px;
   }
 }

@@ -1,9 +1,9 @@
 .projects-page {
   height: 100%;
   display: flex;
+  overflow-x: hidden;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   flex-direction: column;
-  overflow: hidden;
 }
 
 .projects-page h1 {
@@ -25,6 +25,7 @@
   background-color: white;
   color: black;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: column;
 }
@@ -121,11 +122,15 @@
   color: goldenrod;
 }
 
-.next-btn {
-  margin-top: 250px;
+.prev-about {
+  margin: 10px;
 }
 
-@media all and (min-width: 768px) {
+.next-btn {
+  margin: 10px;
+}
+
+@media all and (min-width: 1100px) {
   .projects-page button:hover {
     color: #0088a9;
     cursor: pointer;
@@ -146,6 +151,6 @@
   }
 
   .next-contact {
-    margin-top: 300px;
+    margin-top: 280px;
   }
 }

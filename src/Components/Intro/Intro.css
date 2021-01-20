@@ -10,17 +10,14 @@
 }
 
 .heading {
-  text-align: center;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .heading h1 {
   font-family: 'Orbitron', sans-serif;
-  color: goldenrod;
   font-size: 30px;
-  width: 50%;
-  margin-left: 98px;
-  letter-spacing: 10px;
   background: -webkit-linear-gradient(white, #38495a);
   background-clip: text;
   -webkit-background-clip: text;
@@ -29,23 +26,17 @@
 
 .heading h2 {
   font-family: 'Montserrat', sans-serif;
-  color: #fefefe;
   font-size: 20px;
   background: -webkit-linear-gradient(goldenrod, #38495a);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  flex-grow: 1;
 }
 
-.nav-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.nav-btn button {
   border: 1px solid rgba(255, 255, 255, 0);
-  margin-left: 83px;
-  margin-top: 590px;
   height: 100px;
-  width: 200px;
 }
 
 #stars {
@@ -987,7 +978,7 @@
 
 .intro button {
   font-family: 'Montserrat', sans-serif;
-  color: goldenrod;
+  color: #0088a9;
   background-color: rgba(255, 255, 255, 0);
   width: 65px;
   border: none;
@@ -1001,7 +992,7 @@
 
 .pulse {
   position: absolute;
-  top: 45%;
+  top: 350px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
@@ -1028,12 +1019,11 @@
   }
 
   .heading {
-    margin-top: 400px;
+    margin-top: 350px;
   }
 
   .heading h1 {
     font-size: 60px;
-    margin-left: 200px;
   }
 
   .heading h2 {
@@ -1041,12 +1031,15 @@
   }
 
   .nav-btn {
-    margin-top: 420px;
-    margin-left: 295px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-width: 70px;
+    border-radius: 50%;
+    margin-bottom: -70px;
     box-shadow: inset 0 0 40px rgba(255, 255, 255, 100);
+    align-self: center;
+    justify-content: center;
+    width: 7%;
+    margin-left: 46.5%;
+    height: 145px;
+    flex: 1;
   }
 
   .nav-btn:hover {
@@ -1055,9 +1048,15 @@
     transition: 200ms;
   }
 
+  .nav-btn:hover button {
+    color: goldenrod;
+    transition: 200ms;
+  }
+
   .pulse {
     width: 500px;
     height: 500px;
+    top: 480px;
   }
 
   #stars2 {

@@ -55,6 +55,7 @@ export default class About extends Component {
         </div>
         <div className='tech'>
           <div className='design'>
+            <span><FontAwesomeIcon className='tech-icons' icon='pencil-alt'/> </span>
             <h2> Designer</h2>
             <h4> Design Tools </h4>
             <p> Balsamiq Wireframes </p>
@@ -63,6 +64,7 @@ export default class About extends Component {
             <p> Pen and Paper </p>
           </div>
           <div className='fullstack'>
+          <span><FontAwesomeIcon className='tech-icons' icon='code'/> </span>
             <h2> Full Stack Development </h2>
             <h4> Languages </h4>
             <p> HTML, CSS, JavaScript, C# </p>

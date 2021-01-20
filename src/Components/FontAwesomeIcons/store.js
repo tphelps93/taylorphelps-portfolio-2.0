@@ -3,7 +3,9 @@ import {
     faUserTie,
     faHome,
     faProjectDiagram,
-    faEnvelope
+    faEnvelope,
+    faPencilAlt,
+    faCode
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faHome, faUserTie, faProjectDiagram, faEnvelope);
+library.add(faHome, faUserTie, faProjectDiagram, faEnvelope, faPencilAlt, faCode);

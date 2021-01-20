@@ -1,11 +1,13 @@
 .fade-enter {
     opacity: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 .fade-enter.fade-enter-active {
     opacity: 1;
     transition: opacity 250ms ease-in;
+    overflow: hidden;
 }
 
 
