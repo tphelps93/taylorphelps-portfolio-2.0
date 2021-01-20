@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import gym from '../../Images/gym.jpg';
 import dog from '../../Images/dog.jpg';
-import calc from '../../Images/calc.jpg';
 import book from '../../Images/books.jpg';
 import './Projects.css';
 
