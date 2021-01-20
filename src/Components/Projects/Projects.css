@@ -50,7 +50,6 @@
   position: relative;
   width: 350px;
   margin: 5px;
-  box-shadow: 5px 0 25px 10px rgba(0, 0, 0, 0.25);
 }
 
 .proj-img {
@@ -77,11 +76,13 @@
   justify-content: center;
   opacity: 0;
   transition: opacity 0.25s;
+  box-shadow: 5px 0 25px 10px rgba(0, 0, 0, 0.25);
 }
 
 .projects {
   padding: 10px;
   flex-direction: row;
+  height: 100%;
 }
 
 .proj-links {
@@ -148,9 +149,5 @@
 
   .projects-page button {
     margin: 5px;
-  }
-
-  .next-contact {
-    margin-top: 280px;
   }
 }
