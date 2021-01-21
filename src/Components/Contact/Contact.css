@@ -112,6 +112,10 @@
   visibility: visible;
 }
 
+.social-links {
+  padding: 25px;
+}
+
 .social-links h2 {
   font-family: 'Orbitron', sans-serif;
   color: #0088a9;
