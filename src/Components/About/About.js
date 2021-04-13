@@ -12,7 +12,7 @@ export default class About extends Component {
       <div className='about page'>
         <Link className='prev-home' to='/'>
           <button>
-            <FontAwesomeIcon style={{ fontSize: '35px' }} icon='home' />{' '}
+            <FontAwesomeIcon style={{ fontSize: '35px' }} icon='home' />{' '} 
           </button>
         </Link>
         <div className='about-content'>

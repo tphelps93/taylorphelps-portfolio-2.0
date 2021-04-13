@@ -8,6 +8,7 @@ import Intro from './Components/Intro/Intro';
 import Contact from './Components/Contact/Contact';
 import About from './Components/About/About';
 import Projects from './Components/Projects/Projects';
+import NavBar from './Components/NavBar/NavBar';
 // CSS Imports
 import '../src/Components/FontAwesomeIcons/store';
 import './App.css';
@@ -19,6 +20,7 @@ class App extends Component {
       <Route
         render={({ location }) => (
           <div className='App'>
+            <NavBar />
             <TransitionGroup>
               <CSSTransition key={location.key} timeout={300} classNames='fade'>
                 <Switch location={location}>

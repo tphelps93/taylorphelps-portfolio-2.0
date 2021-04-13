@@ -1,0 +1,38 @@
+.nav-bar {
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+
+.nav-btn button {
+  border: 1px solid rgba(255, 255, 255, 0);
+  height: 100px;
+}
+
+@media all and (min-width: 768px) {
+  .nav-btn {
+    border-radius: 50%;
+    margin-bottom: -70px;
+    box-shadow: inset 0 0 40px rgba(255, 255, 255, 100);
+    /* align-self: center; */
+    justify-content: center;
+    width: 7%;
+    margin-left: 46.5%;
+    height: 145px;
+    flex: 1;
+  }
+
+  .nav-btn:hover {
+    box-shadow: 5px 50px 50px 80px goldenrod;
+    cursor: pointer;
+    transition: 200ms;
+  }
+
+  .nav-btn:hover button {
+    color: goldenrod;
+    transition: 200ms;
+  }
+}

@@ -19,13 +19,6 @@ export default class Intro extends Component {
         <div className='heading'>
           <h1> Taylor Phelps </h1>
           <h2> FullStack Web Developer </h2>
-          <Link to='/about'>
-            <div className='nav-btn'>
-              <button>
-                <FontAwesomeIcon style={{ fontSize: '35px' }} icon='user-tie' />{' '}
-              </button>
-            </div>
-          </Link>
         </div>
       </div>
     );
