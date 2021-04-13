@@ -26,8 +26,8 @@
 }
 
 .nav-btn {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .nav-btn button {
@@ -53,5 +53,12 @@
   .nav-btn {
     margin-left: 100px;
     margin-right: 100px;
+  }
+}
+
+@media all and (min-height: 600px) {
+  .nav-btn {
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 }

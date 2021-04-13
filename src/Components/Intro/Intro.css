@@ -1,8 +1,8 @@
 .intro {
   height: 100vh;
+  overflow: hidden;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -17,7 +17,7 @@
 
 .heading h1 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   background: -webkit-linear-gradient(white, #38495a);
   background-clip: text;
   -webkit-background-clip: text;
@@ -33,6 +33,7 @@
   -webkit-text-fill-color: transparent;
   flex-grow: 1;
 }
+
 
 #stars {
   width: 1px;
@@ -977,11 +978,11 @@
 
 .pulse {
   position: absolute;
-  top: 350px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background: url('../../Images/earth.png');
   background-size: cover;
   animation: animateEarth 25s linear infinite;
@@ -999,6 +1000,9 @@
 }
 
 @media all and (min-width: 768px) {
+  .intro {
+    overflow: hidden;
+  }
   .heading {
     margin-top: 350px;
   }
@@ -1023,5 +1027,17 @@
 
   #stars4 {
     margin-left: 550px;
+  }
+}
+
+@media all and (max-height: 610px) {
+  .pulse {
+    width: 300px;
+    height: 300px;
+    top: 300px;
+  }
+
+  .heading {
+    margin-top: 200px;
   }
 }

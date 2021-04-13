@@ -1,9 +1,7 @@
 // Dependency Imports
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 // CSS Imports
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import gym from '../../Images/gym.jpg';
 import dog from '../../Images/dog.jpg';
 import book from '../../Images/books.jpg';
