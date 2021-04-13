@@ -90,15 +90,6 @@ export default class Contact extends Component {
     const { status } = this.state;
     return (
       <div className='contact page'>
-        <Link className='prev-proj' to='/projects'>
-          <button>
-            <FontAwesomeIcon
-              style={{ fontSize: '35px' }}
-              icon='project-diagram'
-            />{' '}
-          </button>
-        </Link>
-
         <form
           onSubmit={this.submitForm}
           action='https://formspree.io/f/moqpreea'

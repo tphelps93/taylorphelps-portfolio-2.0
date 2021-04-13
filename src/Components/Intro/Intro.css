@@ -34,11 +34,6 @@
   flex-grow: 1;
 }
 
-.nav-btn button {
-  border: 1px solid rgba(255, 255, 255, 0);
-  height: 100px;
-}
-
 #stars {
   width: 1px;
   width: 1px;
@@ -976,16 +971,6 @@
   }
 }
 
-.intro button {
-  font-family: 'Montserrat', sans-serif;
-  color: #0088a9;
-  background-color: rgba(255, 255, 255, 0);
-  width: 65px;
-  border: none;
-  font-size: 20px;
-  align-self: center;
-}
-
 .next {
   text-align: center;
 }
@@ -1014,10 +999,6 @@
 }
 
 @media all and (min-width: 768px) {
-  .intro button:hover {
-    cursor: pointer;
-  }
-
   .heading {
     margin-top: 350px;
   }

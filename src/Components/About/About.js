@@ -10,11 +10,6 @@ export default class About extends Component {
   render() {
     return (
       <div className='about page'>
-        <Link className='prev-home' to='/'>
-          <button>
-            <FontAwesomeIcon style={{ fontSize: '35px' }} icon='home' />{' '} 
-          </button>
-        </Link>
         <div className='about-content'>
           <img src={taylor} alt='developer'></img>
           <div>
@@ -76,14 +71,6 @@ export default class About extends Component {
             <p> Heroku, Vercel </p>
           </div>
         </div>
-        <Link className='next-proj' to='/projects'>
-          <button>
-            <FontAwesomeIcon
-              style={{ fontSize: '35px' }}
-              icon='project-diagram'
-            />{' '}
-          </button>
-        </Link>
       </div>
     );
   }

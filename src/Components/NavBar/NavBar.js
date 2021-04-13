@@ -9,13 +9,55 @@ export default class NavBar extends Component {
   render() {
     return (
       <div className='nav-bar'>
-        <Link to='/about'>
-          <div className='nav-btn'>
-            <button>
-              <FontAwesomeIcon style={{ fontSize: '35px' }} icon='user-tie' />{' '}
-            </button>
-          </div>
-        </Link>
+        <div className='nav-list'>
+          <Link className='prev-home' to='/'>
+            <div className='nav-btn'>
+              <button>
+                <FontAwesomeIcon
+                  className='home-btn'
+                  style={{ fontSize: '30px' }}
+                  icon='home'
+                />{' '}
+              </button>
+            </div>
+          </Link>
+
+          <Link to='/about'>
+            <div className='nav-btn'>
+              <button>
+                <FontAwesomeIcon
+                  className='about-btn not-home'
+                  style={{ fontSize: '30px' }}
+                  icon='user-tie'
+                />{' '}
+              </button>
+            </div>
+          </Link>
+
+          <Link to='/projects'>
+            <div className='nav-btn'>
+              <button>
+                <FontAwesomeIcon
+                  className='proj-btn not-home'
+                  style={{ fontSize: '30px' }}
+                  icon='project-diagram'
+                />{' '}
+              </button>
+            </div>
+          </Link>
+
+          <Link to='/contact'>
+            <div className='nav-btn'>
+              <button>
+                <FontAwesomeIcon
+                  className='contact-btn not-home'
+                  style={{ fontSize: '30px' }}
+                  icon='envelope'
+                />{' '}
+              </button>
+            </div>
+          </Link>
+        </div>
       </div>
     );
   }

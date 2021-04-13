@@ -1,8 +1,6 @@
 // Dependency Imports
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 // CSS Imports
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Intro.css';
 
 export default class Intro extends Component {
@@ -18,7 +16,7 @@ export default class Intro extends Component {
         </div>
         <div className='heading'>
           <h1> Taylor Phelps </h1>
-          <h2> FullStack Web Developer </h2>
+          <h2> FullStack Engineer </h2>
         </div>
       </div>
     );
