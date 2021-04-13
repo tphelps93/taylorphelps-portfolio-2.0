@@ -1,6 +1,7 @@
 .about {
   width: 100%;
   display: flex;
+  overflow-x: hidden;
   flex-direction: column;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }

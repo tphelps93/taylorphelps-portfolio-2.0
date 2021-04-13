@@ -1,20 +1,8 @@
 .contact {
-  height: 100%;
-  width: 100%;
+  min-height: 100%; 
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-}
-
-.prev-proj button {
-  font-family: 'Montserrat', sans-serif;
-  color: goldenrod;
-  background-color: rgba(255, 255, 255, 0);
-  width: 90px;
-  border: none;
-  font-size: 20px;
-  padding: 10px;
 }
 
 .contact-form {
@@ -32,7 +20,6 @@
 .contact-form textarea {
   resize: vertical;
   max-height: 400px;
-  height: 200px;
 }
 
 .contact-form button {
@@ -130,15 +117,6 @@
 }
 
 @media all and (min-width: 768px) {
-  .contact {
-    overflow: hidden;
-  }
-
-  .prev-btn button:hover {
-    color: #0088a9;
-    cursor: pointer;
-    transition: 200ms;
-  }
 
   .contact-form button:hover {
     cursor: pointer;
